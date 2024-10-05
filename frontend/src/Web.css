@@ -1,0 +1,72 @@
+.menu{
+    width: 400vh;
+    height: 120vh;
+    background-color: rgb(31, 196, 225);
+    flex-direction: column;
+    align-items: flex-start;
+    display: flex;
+}
+
+.menu-image{
+    width: 35px;
+}
+
+.menu :hover{
+    background-color: rgb(11, 145, 163); 
+}
+
+.green{
+    font-size: 7vh;
+    font-family: 'Bauhaus 93', sans-serif;
+    color: white;
+                                                
+}
+
+.total{
+    display: flex;
+    background-color: rgb(189, 188, 188);
+}
+
+.men{
+    border: rgb(31, 196, 225) solid 3px ;
+    height: 6vh;
+    font-size: 20px;
+    font-weight: 500;
+    
+}
+
+
+.navbar {
+    background-color: rgb(11, 145, 163);
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 165.8vh;
+}
+
+.navbar a {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 14px 20px;
+    display: block;
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbar li {
+    display: inline;
+}
+
+.navbar a:hover {
+    background-color: #575757;
+}
+
+.icon{
+    width: 3vh;
+}

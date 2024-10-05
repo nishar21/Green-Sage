@@ -1,0 +1,70 @@
+.Login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    height: 100vh;
+    background-image: url("agri.jpg");
+    background-size: 200vh;
+  
+  }
+  
+  .loginlabel {
+    font-size: 50px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .logine, .loginp {
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: white;
+    font-size: 25px;
+  }
+  
+  .loginemail, .loginpassword {
+    width: 30%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .loginemail:focus, .loginpassword:focus {
+    border-color: #aaa;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .loginsubmit, .loginin {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+    font-size: 25px;
+  }
+  
+  .loginsubmit {
+    background-color: #4CAF50;
+    color: #fff;
+  }
+  
+  .loginsubmit:hover {
+    background-color: #3e8e41;
+  }
+  
+  
+  .loginin:hover {
+    background-color: #23527c;
+  }
+
+  .logup{
+    background-color: #66a7e0;
+    color: #fff;
+    margin-left: 10px;
+    font-size: 25px;
+  }
+

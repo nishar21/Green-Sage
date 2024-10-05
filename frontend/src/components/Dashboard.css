@@ -1,0 +1,128 @@
+.whole{
+    display: flex;
+}
+
+.dashboard{
+    background-color: rgb(152, 152, 152)
+}
+
+.dash{
+    display: flex;
+}
+
+.crop{
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    display: flex;
+    background-color: white;
+    border: rgb(152, 152, 152) solid 8px;
+    width: 280px;
+    height: 280px;
+    
+}
+
+.crop-type{
+    font-size: 18px;
+}
+
+.crop-image{
+    width: 200px;
+    height: 200px;
+}
+
+.crop-category{
+    font-size: 30px;
+}
+
+.fertilizer{
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    display: flex;
+    background-color: white;
+    border: rgb(152, 152, 152) solid 8px;
+}
+
+.cylinder{
+    width: 500px;
+    height: 100px;
+}
+
+.f-name{
+    font-size: 35px;
+}
+
+.percentage{
+    font-size: 80px;
+}
+
+.npk{
+    font-size: 20px;
+}
+
+.chart{
+    width: 70vh;
+    height: 250px;
+    background-color: white;
+    border: rgb(152, 152, 152) solid 8px;
+}
+
+.land{
+    width: 40vh;
+    height: 200px;
+}
+
+.land-area{
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    display: flex;
+    background-color: white;
+    border: rgb(152, 152, 152) solid 4px;
+}
+
+.bottom{
+    display: flex;
+}
+
+.right{
+    display: inline;
+}
+
+.seas{
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    display: flex;
+    background-color: white;
+    border: rgb(152, 152, 152) solid 4px;
+    height: 50vh;
+}
+
+.seasons{
+    font-size: 40px;
+}
+
+.season-image{
+    width: 40vh;
+}
+
+.Ext{
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    display: flex;
+    background-color: white;
+    border: rgb(152, 152, 152) solid 4px;
+    height: 50vh;
+}
+
+.text{
+    font-size: 23px;
+}
+
+.Extra{
+    font-size: 40px;
+    font-weight: 500;
+}

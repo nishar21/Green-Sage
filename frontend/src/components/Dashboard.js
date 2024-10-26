@@ -1,8 +1,9 @@
-import React from 'react'
+import React, { useState } from 'react'
 //import { Papa } from 'papaparse'
 import './Dashboard.css'
 import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer, Rectangle } from 'recharts'
 import { Link } from 'react-router-dom'
+import Papa from 'papaparse'
 
 function Dashboard() {
 
@@ -30,15 +31,28 @@ function Dashboard() {
             }
         })
     }*/
-        const data = [
-            {
-              name: 'Today',
-              Potassium: 4000,
-              Phosphorous: 2400,
-              Nitrogen:5600,
-              amt: 2400,
-            }
-          ]
+
+        const [cdata, setCData] = useState([]);
+        const [fdata,setfdata] = useState([])
+const handleFileUpload = (e) => {
+  const file = e.target.files[0];
+  Papa.parse(file, {
+    header: true,  
+    complete: (results) => {
+      const parsedData = results.data;
+      setCData(parsedData);
+
+      
+      const fdata = parsedData.map((row) => ({
+              name: row.name,
+              Potassium: Number(row.Potassium),
+              Phosphorous: Number(row.Phosphorous),
+              Nitrogen:Number(row.Nitrogen)
+      }));
+      setfdata(fdata)
+    }
+  });
+};
     
   return (
 
@@ -118,7 +132,7 @@ function Dashboard() {
                         <BarChart
                         width={500}
                         height={300}
-                        data={data}
+                        data={fdata}
                         margin={{
                             top: 5,
                             right: 30,
@@ -162,7 +176,9 @@ function Dashboard() {
 
                 </p>
             </div>
+            <input type="file" accept=".csv" onChange={handleFileUpload} />
         </div>
+        
     </div>
   )
 }
